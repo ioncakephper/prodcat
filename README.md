@@ -311,6 +311,3 @@ For more details, please see our (forthcoming) `CONTRIBUTING.md` file and be sur
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
----
-
-_This README was generated with assistance from an AI agent._
