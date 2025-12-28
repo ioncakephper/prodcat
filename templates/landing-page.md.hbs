@@ -1,0 +1,12 @@
+---
+sidebar_label: "{{{product.name}}}"
+{{#each product.frontMatter }}
+{{@key}}: "{{{this}}}"
+{{/each}}
+---
+
+# {{#if product.title}}{{{product.title}}}{{else}}{{{product.name}}}{{/if}}
+
+{{{product.intro}}}
+
+[See documentation]({{{product.id}}}/{{{product.docEntry}}} "Go to {{{product.name}}} documentation")
