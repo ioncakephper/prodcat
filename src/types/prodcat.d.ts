@@ -6,7 +6,6 @@ export interface ProductSpec {
   description?: string;
   category?: string;
   docEntry?: string;
-  sidebarName?: string;
   [key: string]: any;
 }
 
