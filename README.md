@@ -310,4 +310,3 @@ For more details, please see our (forthcoming) `CONTRIBUTING.md` file and be sur
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
