@@ -4,9 +4,7 @@ export interface ProductSpec {
   id?: string;
   name: string;
   description?: string;
-  category?: string;
   docEntry?: string;
-  sidebarName?: string;
   [key: string]: any;
 }
 
