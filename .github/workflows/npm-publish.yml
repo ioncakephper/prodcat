@@ -4,12 +4,13 @@
 name: Node.js Package
 
 on:
+  workflow_dispatch: {}
   # release:
   #   types: [created]
 
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   build:
