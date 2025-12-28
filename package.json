@@ -1,7 +1,17 @@
 {
   "name": "prodcat",
   "version": "0.0.1",
-  "description": "A CLI to build product directory and landing pages for Docusaurus-powered sites",
+  "description": "A command-line interface tool for managing and generating product catalog documentation.",
+  "keywords": [
+    "cli",
+    "product directory",
+    "landing pages",
+    "docusaurus",
+    "documentation",
+    "static site generator",
+    "generator",
+    "tool"
+  ],
   "license": "MIT",
   "author": {
     "name": "Ion Gireada",
@@ -12,12 +22,30 @@
   "bin": {
     "prodcat": "./bin/cli.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
   "scripts": {
     "check": "npm run lint && npm run format",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
     "start": "node ./bin/cli.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
   },
   "dependencies": {
     "@babel/parser": "^7.28.5",
@@ -40,23 +68,11 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
+    "husky": "^9.1.7",
     "jest": "^30.2.0",
     "jest-extended": "^7.0.0",
     "prettier": "^3.7.4",
     "prettier-plugin-packagejson": "^2.5.20",
     "semantic-release": "^21.1.2"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
   }
 }
