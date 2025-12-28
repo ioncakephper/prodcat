@@ -15,6 +15,8 @@ import { ZodError } from 'zod';
 // Define global options here for clarity and reusability
 const GLOBAL_OPTIONS = [
   ['-v, --verbose', 'enable verbose logging'],
+  ['-d, --debug', 'enable debug logging'],
+  ['-q, --quiet', 'disable all logging'],
   ['-c, --config <path>', 'config file path', CONFIG_FILE_NAME],
 ];
 
@@ -45,7 +47,7 @@ export async function createProgram(program, initialGlobalOptions) {
   // 3. Load package.json and set program metadata
   const packageJson = await loadPackageJsonFunc(baseDependencies);
   program
-    .name(packageJson.name || 'prodcat-cli')
+    .name(packageJson.name || 'commander-cli')
     .version(packageJson.version || '0.0.0')
     .description(packageJson.description || 'A CLI application');
 
