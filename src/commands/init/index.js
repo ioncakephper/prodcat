@@ -3,7 +3,7 @@ export async function register(program, commandName, commandDependencies) {
   const name = program.name();
   program
     .command(commandName)
-    .description('Initialize a new prodcat configuration file')
+    .description('initialize a new prodcat configuration file')
     .alias('i')
     .argument(
       '[configFile]',
