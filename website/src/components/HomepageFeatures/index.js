@@ -4,31 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Automated Documentation',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Prodcat automates the creation of a beautiful, feature-rich Docusaurus
+        website from a simple list of products.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on Your Products',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Prodcat lets you focus on your products, and we&apos;ll do the chores. Just
+        add your products to the <code>products.js</code> file.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Highly Customizable',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
+        Extend or customize your website layout by reusing React. Prodcat can
         be extended while reusing the same header and footer.
       </>
     ),

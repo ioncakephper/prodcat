@@ -17,3 +17,58 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+prodcat:
+  label: Prodcat
+  permalink: /prodcat
+  description: Prodcat tag description
+
+comparison:
+  label: Comparison
+  permalink: /comparison
+  description: Comparison tag description
+
+documentation:
+  label: Documentation
+  permalink: /documentation
+  description: Documentation tag description
+
+customization:
+  label: Customization
+  permalink: /customization
+  description: Customization tag description
+
+theming:
+  label: Theming
+  permalink: /theming
+  description: Theming tag description
+
+templates:
+  label: Templates
+  permalink: /templates
+  description: Templates tag description
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Automation tag description
+
+time-saving:
+  label: Time-saving
+  permalink: /time-saving
+  description: Time-saving tag description
+
+business:
+  label: Business
+  permalink: /business
+  description: Business tag description
+
+marketing:
+  label: Marketing
+  permalink: /marketing
+  description: Marketing tag description
+
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Getting Started tag description
