@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Prodcat',
+  tagline: 'Effortless Product Documentation',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -27,8 +27,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: '', // Usually your GitHub org/user name.
+  projectName: '', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,10 +47,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -58,10 +54,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -83,14 +75,30 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Prodcat',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Prodcat Logo',
           src: 'img/logo.svg',
         },
-        items: [ {"to":"/docs/products","label":"Products","position":"left"},
-        {to: '/blog', label: 'Blog', position: 'left'}, {
-          href: 'https://github.com/facebook/docusaurus',
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'userGuideSidebar',
+            position: 'left',
+            label: 'User Guide',
+          },
+          {type: 'docSidebar',
+            sidebarId: 'developerGuideSidebar',
+            position: 'left',
+            label: 'Developer Guide'},
+          {type: 'docSidebar',
+            sidebarId: 'adminGuideSidebar',
+            position: 'left',
+            label: 'Administrator Guide'},
+           {"to":"/docs/products","label":"Products","position":"left"},
+           {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://github.com/ioncakephper/prodcat',
           label: 'GitHub',
           position: 'right',
         }],
@@ -102,8 +110,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'User Guide',
+                to: '/docs/user-guide/introduction',
+              },
+              {
+                label: 'Developer Guide',
+                to: '/docs/developer-guide/introduction',
+              },
+              {
+                label: 'Administrator Guide',
+                to: '/docs/admin-guide/installation-deployment',
               },
             ],
           },
@@ -133,12 +149,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/your-repo/prodcat',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Prodcat. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
