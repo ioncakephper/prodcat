@@ -303,10 +303,14 @@ npm test
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request. We recommend creating an issue first to discuss any major changes.
+We welcome contributions from the community!
 
-For more details, please see our (forthcoming) `CONTRIBUTING.md` file and be sure to follow our Code of Conduct.
+Please read our [Contributing Guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Prodcat.
+
+To ensure a welcoming and inclusive environment, we have a [Code of Conduct](CODE_OF_CONDUCT.md) that all contributors are expected to follow.
 
 ## License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the terms of the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more details.
