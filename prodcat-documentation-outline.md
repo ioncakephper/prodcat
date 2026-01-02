@@ -135,4 +135,3 @@ This document outlines the structure and content for the Prodcat documentation, 
     - Common issues and solutions
     - Logging and diagnostics
     - Getting support
-

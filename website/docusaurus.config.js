@@ -83,18 +83,10 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'userGuideSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'User Guide',
+            label: 'Documentation',
           },
-          {type: 'docSidebar',
-            sidebarId: 'developerGuideSidebar',
-            position: 'left',
-            label: 'Developer Guide'},
-          {type: 'docSidebar',
-            sidebarId: 'adminGuideSidebar',
-            position: 'left',
-            label: 'Administrator Guide'},
            {"to":"/docs/products","label":"Products","position":"left"},
            {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -116,16 +108,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'User Guide',
+                label: 'Documentation',
                 to: '/docs/introduction',
-              },
-              {
-                label: 'Developer Guide',
-                to: '/docs/developer-guide/introduction',
-              },
-              {
-                label: 'Administrator Guide',
-                to: '/docs/admin-guide/installation-deployment',
               },
             ],
           },
@@ -155,7 +139,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-repo/prodcat',
+                href: 'https://github.com/ioncakephper/prodcat',
               },
             ],
           },
@@ -170,3 +154,4 @@ const config = {
 };
 
 export default config;
+
