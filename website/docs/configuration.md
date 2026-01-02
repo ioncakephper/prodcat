@@ -19,10 +19,10 @@ The `prodcat.config.js` file is the central place for configuring your Prodcat p
 | Option Name             | Type                  | Default Value                          | Description                                                                                                                                                                                            | Example Use Case                                             |
 | :---------------------- | :-------------------- | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- |
 | `products`              | `array<object>`       | `[]`                                   | An array of software product objects. Each object in this array defines a software product, including its name, ID, and descriptive content.                                                              | `products: [{ name: "App", id: "app" }]`                      |
-| `website.docsRoot`      | `string`              | `'docs'`                               | The root directory where your Docusaurus documentation markdown files are located. This is typically `website/docs` in a standard Docusaurus setup.                                                    | `website: { docsRoot: 'my-docs' }`                           |
-| `website.productsFilePath` | `string`              | `'products.js'`                        | The path to the JavaScript file that exports your array of software product objects.                                                                                                                   | `website: { productsFilePath: 'data/myProducts.js' }`        |
-| `website.productsOutputPath` | `string`              | `'docs/products'`                      | The output directory within your Docusaurus `docsRoot` where the generated software product documentation markdown files will be placed.                                                               | `website: { productsOutputPath: 'generated/products' }`      |
-| `website.landingPagePathPattern` | `string`              | `'docs/products/index.md'`             | The path pattern for the main landing page that lists all your software products.                                                                                                                      | `website: { landingPagePathPattern: 'pages/all-products.md' }` |
+| `docsRoot`              | `string`              | `'docs'`                               | The root directory where your Docusaurus documentation markdown files are located. This is typically `website/docs` in a standard Docusaurus setup.                                                    | `website: { docsRoot: 'my-docs' }`                           |
+| `productsFilePath` | `string`              | `'products.js'`                        | The path to the JavaScript file that exports your array of software product objects.                                                                                                                   | `website: { productsFilePath: 'data/myProducts.js' }`        |
+| `productsOutputPath` | `string`              | `'docs/products'`                      | The output directory within your Docusaurus `docsRoot` where the generated software product documentation markdown files will be placed.                                                               | `website: { productsOutputPath: 'generated/products' }`      |
+| `landingPagePathPattern` | `string`              | `'docs/products/index.md'`             | The path pattern for the main landing page that lists all your software products.                                                                                                                      | `website: { landingPagePathPattern: 'pages/all-products.md' }` |
 | `templates.landingPage` | `string`              | `'templates/landing-page.md.hbs'`      | The path to the Handlebars template file used to generate the main software products landing page.                                                                                                     | `templates: { landingPage: 'my-templates/overview.hbs' }`    |
 | `templates.productPage` | `string`              | `'templates/products-directory.md.hbs'` | The path to the Handlebars template file used to generate individual software product pages.                                                                                                           | `templates: { productPage: 'my-templates/product.hbs' }`     |
 | `defaultNavbarLabel`    | `string`              | `'Products'`                           | The default label to use for the navbar item that links to the software products page if `--navbar-label` is not specified during `prodcat generate`.                                                    | `defaultNavbarLabel: 'Our Software'`                         |
@@ -39,10 +39,8 @@ Here are some examples of `prodcat.config.js` files demonstrating different use 
 ```javascript
 // prodcat.config.js
 module.exports = {
-  website: {
-    docsRoot: './docs', // Docusaurus docs directory
-    productsOutputPath: 'products', // Output path within docsRoot for product pages
-  },
+  docsRoot: './docs', // Docusaurus docs directory
+  productsOutputPath: 'products', // Output path within docsRoot for product pages
   templates: {
     landingPage: 'templates/landing-page.md.hbs',
     productPage: 'templates/product-page.md.hbs',
@@ -60,11 +58,9 @@ module.exports = {
   // Specify a different file for products data
   productsFilePath: 'data/myCompanyProducts.js',
 
-  website: {
-    docsRoot: 'my-docusaurus-site/docs', // Custom Docusaurus docs path
-    productsOutputPath: 'generated/products', // Custom output path
-    landingPagePathPattern: 'custom-pages/products-overview.md', // Custom landing page path
-  },
+  docsRoot: 'my-docusaurus-site/docs', // Custom Docusaurus docs path
+  productsOutputPath: 'generated/products', // Custom output path
+  landingPagePathPattern: 'custom-pages/products-overview.md', // Custom landing page path
   templates: {
     landingPage: 'custom-templates/product-listing.hbs',
     productPage: 'custom-templates/single-product-view.hbs',
