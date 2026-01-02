@@ -98,6 +98,12 @@ const config = {
            {"to":"/docs/products","label":"Products","position":"left"},
            {to: '/blog', label: 'Blog', position: 'left'},
         {
+            to: '/donate',
+            label: 'DONATE',
+            position: 'right',
+            className: 'button button--primary'
+        },
+        {
           href: 'https://github.com/ioncakephper/prodcat',
           label: 'GitHub',
           position: 'right',
