@@ -4,41 +4,31 @@ sidebar_position: 3
 
 # Customization
 
-Prodcat is designed to be highly customizable, allowing you to tailor the look and feel of your website to match your brand.
+This section explains how to customize your Prodcat website.
 
 ## Theming
 
 ### Modifying the look and feel
 
-You can customize the look and feel of your website by modifying the CSS files in the `website/src/css` directory. The `custom.css` file is the best place to add your own custom styles.
-
-Docusaurus uses the Infima CSS framework. You can customize the Infima variables to change the color palette, typography, and other aspects of the design. You can find more information in the [Docusaurus Theming documentation](https://docusaurus.io/docs/styling-layout).
+You can modify the look and feel of your Prodcat website by customizing the Docusaurus theme. Docusaurus provides a flexible theming system that allows you to change the colors, fonts, and other visual aspects of your website.
 
 ### CSS and styling guidelines
 
-When adding your own CSS, try to follow these guidelines:
-
--   Use BEM (Block, Element, Modifier) naming conventions for your CSS classes.
--   Avoid using global CSS selectors.
--   Keep your CSS modular and organized.
+You can add your own custom CSS to your Docusaurus project by creating a `custom.css` file in the `src/css` directory. Docusaurus also supports CSS-in-JS and other styling solutions.
 
 ### Customizing Docusaurus components
 
-Docusaurus is built with React, and it allows you to "swizzle" components to customize them. Swizzling allows you to replace a theme component with your own implementation. This is a powerful feature that gives you full control over the markup and logic of the components.
-
-You can find more information on how to swizzle components in the [Docusaurus Swizzling documentation](https://docusaurus.io/docs/swizzling).
+Docusaurus is built with React, which means you can customize its components by "swizzling" them. Swizzling allows you to replace a default component with your own custom implementation.
 
 ## Templates
 
 ### Understanding Handlebars templates
 
-Prodcat uses Handlebars to generate the Markdown files for your product pages and directories. The templates are located in the `templates` directory of the Prodcat project.
-
--   `landing-page.md.hbs`: This template is used to generate the main landing page for your products.
--   `products-directory.md.hbs`: This template is used to generate the individual product pages.
+Prodcat uses Handlebars templates to generate the Markdown files for your software product pages. Handlebars is a simple templating language that allows you to embed dynamic content in your Markdown files.
 
 ### Creating and modifying templates
 
-You can modify these templates to change the structure and content of the generated Markdown files. For example, you could add new sections to the product pages or change the layout of the product directory.
+You can create your own custom templates or modify the existing ones to change the layout and content of your software product pages. The default templates are located in the `templates` directory of your Prodcat project.
 
-The templates are written in Handlebars, which is a simple and powerful templating language. You can find more information on how to use Handlebars in the [Handlebars documentation](https://handlebarsjs.com/).
+- **`landing-page.md.hbs`**: The template for the software products landing page.
+- **`products-directory.md.hbs`**: The template for the individual software product pages.

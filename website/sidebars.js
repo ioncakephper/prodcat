@@ -18,17 +18,11 @@ const sidebars = {
 
   // But you can create a sidebar manually
   userGuideSidebar: [
-    {
-      type: 'category',
-      label: 'User Guide',
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        'user-guide/introduction',
-        'user-guide/core-concepts',
-      ],
-    },
+    'introduction',
+    'core-concepts',
+    'installation',
+    'available-commands',
+    'configuration',
   ],
   developerGuideSidebar: [
     {

@@ -4,85 +4,44 @@ sidebar_position: 2
 
 # Configuration
 
-This section explains how to configure Prodcat to meet your needs.
+This guide explains how to configure your Prodcat installation and Docusaurus website.
 
 ## `prodcat.config.js`
 
-The `prodcat.config.js` file is the main configuration file for Prodcat. It allows you to customize the behavior of the application and the generated website.
+The `prodcat.config.js` file is the main configuration file for Prodcat.
 
 ### Detailed explanation of all configuration options
 
--   **`input`:** The directory where your `products.js` file is located.
--   **`output`:** The directory where the generated Markdown files will be created.
--   **`templates`:** The directory where your Handlebars templates are located.
--   **`siteName`:** The name of your website.
--   **`logo`:** The path to your website's logo.
--   **`navbar`:** The configuration for the website's navbar.
--   **`footer`:** The configuration for the website's footer.
+Please refer to the [User Guide's Configuration section](../configuration) for a detailed explanation of all the options available in `prodcat.config.js`.
 
 ### Example configurations
 
-Here's an example of a `prodcat.config.js` file:
-
-```javascript
-module.exports = {
-  input: './data',
-  output: './website/docs/products',
-  templates: './templates',
-  siteName: 'My Product Catalog',
-  logo: '/img/logo.svg',
-  navbar: {
-    title: 'My Site',
-    items: [
-      { to: '/docs/intro', label: 'Docs', position: 'left' },
-      { href: 'https://github.com/facebook/docusaurus', label: 'GitHub', position: 'right' },
-    ],
-  },
-  footer: {
-    style: 'dark',
-    links: [],
-    copyright: `Copyright © ${new Date().getFullYear()} My Company, Inc.`,
-  },
-};
-```
+Please refer to the [User Guide's Configuration section](../configuration) for example configurations.
 
 ## `docusaurus.config.js`
 
-The `docusaurus.config.js` file is the main configuration file for Docusaurus. It allows you to customize the Docusaurus instance.
+The `docusaurus.config.js` file is the main configuration file for your Docusaurus website.
 
 ### Configuring the Docusaurus instance
 
-You can use this file to configure various aspects of your Docusaurus website, such as the site's title, tagline, and URL. You can find a complete list of configuration options in the [Docusaurus documentation](https://docusaurus.io/docs/api/docusaurus-config).
+In this file, you can configure the site's title, tagline, URL, and other metadata. You can also configure plugins, themes, and presets.
 
 ### Navbar and footer configuration
 
-While you can configure the navbar and footer in `prodcat.config.js`, you can also configure them directly in `docusaurus.config.js`. This is useful if you want to take advantage of more advanced Docusaurus features that are not exposed by Prodcat.
+You can customize the navbar and footer of your website by editing the `navbar` and `footer` objects in `docusaurus.config.js`.
 
 ### Search integration (e.g., Algolia)
 
-Docusaurus has built-in support for Algolia search. To enable it, you need to add an `algolia` section to your `docusaurus.config.js` file with your Algolia API key and index name.
-
-```javascript
-module.exports = {
-  // ...
-  themeConfig: {
-    algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
-    },
-  },
-};
-```
+Docusaurus has built-in support for Algolia DocSearch. To enable it, you need to apply to the DocSearch program and then add your Algolia API keys to `docusaurus.config.js`.
 
 ## Environment Variables
 
 ### Managing environment-specific settings
 
-You can use environment variables to manage environment-specific settings, such as API keys and other secrets. Docusaurus has built-in support for environment variables. You can create a `.env` file in the `website` directory and Docusaurus will automatically load the variables from it.
+You can use environment variables to manage different settings for your development and production environments. For example, you can use a different `baseUrl` for development and production.
 
 ### Security best practices
 
--   Never commit your `.env` file to version control.
--   Use a secret management service, such as HashiCorp Vault or AWS Secrets Manager, to manage your secrets in production.
--   Don't expose sensitive information in your client-side code.
+- **Do not commit sensitive information:** Never commit API keys, passwords, or other sensitive information to your version control system. Use environment variables or a secrets management system to store this information.
+- **Keep your dependencies up to date:** Regularly update your dependencies to ensure that you have the latest security patches.
+- **Follow Docusaurus security best practices:** Refer to the [Docusaurus documentation](https://docusaurus.io/docs/security) for more information on securing your website.

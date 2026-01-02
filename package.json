@@ -29,6 +29,7 @@
   ],
   "scripts": {
     "check": "npm run lint && npm run format",
+    "docs:dev": "cd website && npm run dev",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
     "start": "node ./bin/cli.js",
