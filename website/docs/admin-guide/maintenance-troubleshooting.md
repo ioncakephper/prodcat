@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+title: Maintenance & Troubleshooting Guide
+sidebar_label: "Maintenance & Troubleshooting"
+description: "This guide provides instructions for maintaining and troubleshooting your Prodcat installation. Learn how to upgrade Prodcat, perform backups and restores, and find solutions to common issues. Find out how to enable logging and get support."
+keywords: ["Prodcat", "maintenance", "troubleshooting", "upgrade", "backup", "restore", "logging", "support", "admin guide"]
 ---
 
 # Maintenance & Troubleshooting
@@ -10,7 +14,7 @@ This guide provides information on how to maintain and troubleshoot your Prodcat
 
 ### Versioning and release notes
 
-Prodcat follows semantic versioning. You can find the release notes for each version on the [GitHub releases page](https://github.com/your-repo/prodcat/releases).
+Prodcat follows semantic versioning. You can find the release notes for each version on the [GitHub releases page](https://github.com/ioncakephper/prodcat/releases).
 
 ### Step-by-step upgrade process
 
@@ -56,5 +60,5 @@ DEBUG=prodcat prodcat generate
 If you need help, you can:
 
 - **Check the FAQ:** The FAQ section may have the answer to your question.
-- **Ask on GitHub:** Post your question on the [GitHub Issues](https://github.com/your-repo/prodcat/issues) page.
+- **Ask on GitHub:** Post your question on the [GitHub Issues](https://github.com/ioncakephper/prodcat/issues) page.
 - **Contact Support:** For urgent issues, please contact our support team.

@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+title: Content Management for Prodcat
+sidebar_label: "Content Management"
+description: "Learn how to manage content in your Prodcat-generated website. This guide covers adding and editing software products in `products.js`, managing categories, handling images and assets, and creating custom documentation pages using Markdown and MDX."
+keywords: ["Prodcat", "content management", "products.js", "categories", "Markdown", "MDX", "Docusaurus"]
 ---
 
 # Content Management
@@ -28,11 +32,11 @@ You can add images and other assets to your software product pages by placing th
 
 ### Creating and managing categories
 
-You can create and manage categories by adding a `category` property to your software product objects in `products.js`.
+You can organize software products into categories by adding a `category` property to your software product objects in `products.js`. Note that there is currently no explicit schema validation for this property; any string value will be accepted.
 
 ### Associating software products with categories
 
-To associate a software product with a category, simply add the category name to the `category` property of the software product object.
+To associate a software product with a category, simply add the category name as a string value to the `category` property of the software product object. This property is primarily for documentation purposes within templates and is not currently used for dynamic routing or filtering functionality by Prodcat itself.
 
 ## Custom Pages
 

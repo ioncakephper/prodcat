@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+title: Customizing Your Prodcat Website
+sidebar_label: "Customization"
+description: "Learn how to customize your Prodcat website. This guide covers theming, including modifying the look and feel with CSS and swizzling Docusaurus components, as well as creating and modifying Handlebars templates for your product pages."
+keywords: ["Prodcat", "customization", "theming", "CSS", "Docusaurus", "swizzling", "Handlebars", "templates"]
 ---
 
 # Customization

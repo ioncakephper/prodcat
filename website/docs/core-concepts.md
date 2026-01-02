@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+title: Core Concepts of Prodcat
+sidebar_label: "Core Concepts"
+description: Understand the core concepts of Prodcat, including how to define software products and their attributes, organize them into categories for easy browsing, and use the powerful search functionality to find what you need.
+keywords: [Prodcat, core concepts, software products, categories, search, Docusaurus, Algolia]
 ---
 
 # Core Concepts

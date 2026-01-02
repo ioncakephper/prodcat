@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+title: Developer Guide Introduction
+sidebar_label: "Introduction"
+description: "Welcome to the Prodcat Developer Guide. Learn about Prodcat's system architecture, technology stack (Node.js, Docusaurus, Handlebars), and how to set up your development environment to customize, extend, and contribute to Prodcat."
+keywords: ["Prodcat", "developer guide", "Node.js", "Docusaurus", "Handlebars", "CLI", "system architecture", "development setup"]
 ---
 
 # Introduction
@@ -33,7 +37,7 @@ Prodcat is built on the following technologies:
 To set up your development environment, you'll need to clone the Prodcat repository from GitHub and install the dependencies.
 
 ```bash
-git clone https://github.com/your-repo/prodcat.git
+git clone https://github.com/ioncakephper/prodcat.git
 cd prodcat
 npm install
 ```

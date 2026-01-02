@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction to Prodcat
+sidebar_label: "Introduction"
+description: Learn about Prodcat, a powerful tool for automatically generating and managing beautiful, feature-rich software product documentation websites. Discover its key features, target audience, and how to get started.
+keywords: [Prodcat, documentation, software products, Docusaurus, website generator, technical writing, product management]
 ---
 
 # Introduction
@@ -47,6 +51,6 @@ This documentation is divided into three main sections:
 ### Where to find help
 
 If you need help, you can:
-- **Check the FAQ:** The FAQ section may have the answer to your question.
-- **Ask on GitHub:** Post your question on the [GitHub Issues](https://github.com/your-repo/prodcat/issues) page.
-- **Contact Support:** For urgent issues, please contact our support team.
+- **Check our FAQ:** Find answers to common questions in our [Frequently Asked Questions (FAQ)](./faq).
+- **Ask on GitHub:** Post your question on the [GitHub Issues](https://github.com/ioncakephper/prodcat/issues) page.
+- **Contact Support:** For urgent issues, please refer to our [Support page](./support).

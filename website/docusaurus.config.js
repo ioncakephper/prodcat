@@ -87,7 +87,6 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-           {"to":"/docs/products","label":"Products","position":"left"},
            {to: '/blog', label: 'Blog', position: 'left'},
         {
             to: '/donate',

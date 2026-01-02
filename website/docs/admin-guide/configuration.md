@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+title: Administrator Configuration Guide
+sidebar_label: "Configuration"
+description: "Administrator's guide to configuring Prodcat. Learn how to configure `prodcat.config.js`, `docusaurus.config.js` (including navbar, footer, and search integration with Algolia), manage environment variables, and follow security best practices."
+keywords: ["Prodcat", "configuration", "docusaurus.config.js", "Algolia", "environment variables", "security", "admin guide"]
 ---
 
 # Configuration

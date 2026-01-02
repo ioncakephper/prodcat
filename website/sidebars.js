@@ -23,6 +23,8 @@ const sidebars = {
     'installation',
     'available-commands',
     'configuration',
+    'faq',
+    'support',
     {
       type: 'category',
       label: 'Developer Guide',

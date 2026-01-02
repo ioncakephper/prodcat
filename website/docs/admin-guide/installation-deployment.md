@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+title: Installation & Deployment Guide
+sidebar_label: "Installation & Deployment"
+description: "Learn how to install and deploy your Prodcat documentation website. This guide covers server requirements, software dependencies, step-by-step installation, and deployment strategies for platforms like Netlify and Vercel, including CI/CD."
+keywords: ["Prodcat", "installation", "deployment", "Docusaurus", "Node.js", "Netlify", "Vercel", "CI/CD", "web server"]
 ---
 
 # Installation & Deployment

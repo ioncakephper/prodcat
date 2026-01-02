@@ -1,5 +1,9 @@
 ---
 sidebar_position: 4
+title: Advanced Topics for Prodcat Developers
+sidebar_label: "Advanced Topics"
+description: "Explore advanced topics for Prodcat developers. This guide introduces the plugin system for extending Prodcat's functionality and provides an overview of the available APIs for programmatic data retrieval and integration."
+keywords: ["Prodcat", "advanced topics", "plugins", "API", "development", "integration", "extend"]
 ---
 
 # Advanced Topics

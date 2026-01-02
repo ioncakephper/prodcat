@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+title: Installing Prodcat
+sidebar_label: "Installation"
+description: "Learn how to install Prodcat, a powerful documentation tool. This guide covers prerequisites like Node.js and Docusaurus, and provides instructions for installation using both npx and npm."
+keywords: ["Prodcat", "installation", "Node.js", "Docusaurus", "npm", "npx", "setup", "CLI"]
 ---
 
 # Installation

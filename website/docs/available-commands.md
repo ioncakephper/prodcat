@@ -1,5 +1,9 @@
 ---
 sidebar_position: 4
+title: Available Prodcat Commands
+sidebar_label: "Available Commands"
+description: "Explore the available commands for the Prodcat CLI. This guide details the `prodcat init` and `prodcat generate` commands, including their options, usage, and the files they create."
+keywords: ["Prodcat", "CLI", "commands", "init", "generate", "Docusaurus", "documentation"]
 ---
 
 # Available Commands
