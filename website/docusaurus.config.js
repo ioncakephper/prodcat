@@ -87,6 +87,12 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+                    {
+            type: 'docSidebar',
+            sidebarId: 'tutorialsSidebar',
+            position: 'left',
+            label: 'Tutorials',
+          },
            {to: '/blog', label: 'Blog', position: 'left'},
         {
             to: '/donate',
@@ -109,6 +115,10 @@ const config = {
               {
                 label: 'Documentation',
                 to: '/docs/introduction',
+              },
+              {
+                label: 'Tutorials',
+                to: '/docs/tutorials/overview',
               },
             ],
           },
