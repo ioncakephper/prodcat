@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+title: Maintenance & Troubleshooting Guide
+sidebar_label: "Maintenance & Troubleshooting"
+description: "This guide provides instructions for maintaining and troubleshooting your Prodcat installation. Learn how to upgrade Prodcat, perform backups and restores, and find solutions to common issues. Find out how to enable logging and get support."
+keywords: ["Prodcat", "maintenance", "troubleshooting", "upgrade", "backup", "restore", "logging", "support", "admin guide"]
 ---
 
 # Maintenance & Troubleshooting
@@ -10,54 +14,51 @@ This guide provides information on how to maintain and troubleshoot your Prodcat
 
 ### Versioning and release notes
 
-Prodcat follows semantic versioning. You can find the release notes for each version on the [GitHub Releases](https://github.com/your-repo/prodcat/releases) page.
+Prodcat follows semantic versioning. You can find the release notes for each version on the [GitHub releases page](https://github.com/ioncakephper/prodcat/releases).
 
 ### Step-by-step upgrade process
 
-To upgrade to a new version of Prodcat, run the following command:
-
-```bash
-npm install -g prodcat@latest
-```
-
-After upgrading, be sure to check the release notes for any breaking changes that may affect your project.
+1.  **Check for new releases:** Regularly check the GitHub releases page for new versions of Prodcat.
+2.  **Backup your project:** Before upgrading, it's always a good idea to create a backup of your project.
+3.  **Update the package:** Run `npm install prodcat@latest` to update to the latest version.
+4.  **Check for breaking changes:** Review the release notes for any breaking changes and update your project accordingly.
 
 ## Backup & Restore
 
 ### Backup procedures for content and configuration
 
-To back up your Prodcat project, you should create a backup of the following files and directories:
+To back up your Prodcat project, you should back up the following files and directories:
 
--   `products.js`: Your product data.
--   `prodcat.config.js`: Your Prodcat configuration.
--   `website/docusaurus.config.js`: Your Docusaurus configuration.
--   `website/src`: Your custom CSS and React components.
--   `website/docs`: Your custom documentation pages.
--   `templates`: Your custom Handlebars templates.
+- `prodcat.config.js`
+- `products.js`
+- `website/docusaurus.config.js`
+- `website/sidebars.js`
+- `website/docs`
+- `website/src`
 
 ### Restoring from a backup
 
-To restore your project from a backup, simply replace the files and directories in your project with the ones from your backup.
+To restore from a backup, simply copy the backed-up files and directories back into your project.
 
 ## Troubleshooting
 
 ### Common issues and solutions
 
--   **Command not found:** If you get a "command not found" error when running `prodcat`, make sure that you have installed Prodcat globally and that the npm global bin directory is in your system's PATH.
--   **Build errors:** If you get an error when running `prodcat generate`, check the error message for clues about what went wrong. The most common cause of build errors is a syntax error in your `products.js` or `prodcat.config.js` file.
+- **`command not found: prodcat`**: This error occurs when the `prodcat` command is not in your system's `PATH`. If you installed Prodcat globally, make sure that your `npm` global `bin` directory is in your `PATH`. If you are running it locally, make sure you are in the project's root directory.
+- **`Error: Cannot find module '...'`**: This error occurs when a required module is not installed. Run `npm install` to install all the dependencies.
 
 ### Logging and diagnostics
 
-Prodcat uses the `debug` library for logging. To enable debug logging, set the `DEBUG` environment variable to `prodcat:*`.
+Prodcat uses the `debug` library for logging. To enable debug logging, set the `DEBUG` environment variable to `prodcat`.
 
 ```bash
-DEBUG=prodcat:* prodcat generate
+DEBUG=prodcat prodcat generate
 ```
 
 ### Getting support
 
-If you're still having trouble, you can get support by:
+If you need help, you can:
 
--   **Checking the FAQ:** The FAQ section may have the answer to your question.
--   **Asking on GitHub:** Post your question on the [GitHub Issues](https://github.com/your-repo/prodcat/issues) page.
--   **Contacting Support:** For urgent issues, please contact our support team.
+- **Check the FAQ:** The FAQ section may have the answer to your question.
+- **Ask on GitHub:** Post your question on the [GitHub Issues](https://github.com/ioncakephper/prodcat/issues) page.
+- **Contact Support:** For urgent issues, please contact our support team.
