@@ -20,6 +20,8 @@ Prodcat is built with developers in mind. It's a Node.js-based command-line tool
 
 Prodcat's architecture is straightforward. It takes a `products.js` file as input, which contains an array of software product objects. It then uses Handlebars templates to generate Markdown files for each software product. These Markdown files are then placed in the Docusaurus `docs` directory, and Docusaurus takes care of building the final HTML website.
 
+<!-- TODO: Incorporate an architectural diagram here illustrating the data flow from products.js through Handlebars templates to Docusaurus and the final website. -->
+
 ### Technology stack
 
 Prodcat is built on the following technologies:

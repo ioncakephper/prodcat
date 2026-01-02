@@ -1,52 +1,121 @@
 ---
-sidebar_position: 2
-title: Core Concepts of Prodcat
+sidebar_position: 3
+title: Core Concepts
 sidebar_label: "Core Concepts"
-description: Understand the core concepts of Prodcat, including how to define software products and their attributes, organize them into categories for easy browsing, and use the powerful search functionality to find what you need.
-keywords: [Prodcat, core concepts, software products, categories, search, Docusaurus, Algolia]
+description: "Understand the fundamental concepts behind Prodcat, including how software products and categories are defined, managed, and displayed in your documentation website."
+keywords: ["Prodcat", "core concepts", "software products", "categories", "product pages", "front matter", "products.js"]
 ---
 
 # Core Concepts
 
-This section covers the core concepts of Prodcat that you'll need to understand to use it effectively.
+Prodcat simplifies the process of creating documentation for your software products by building upon a few core concepts. Understanding these will help you effectively structure your data and customize your generated website.
 
 ## Software Products
 
-### Understanding software product pages
+At the heart of Prodcat is the **Software Product**. Each software product is an entry in your `products.js` file that contains all the necessary information to generate a dedicated documentation page for it.
 
-Each software product you define in your `products.js` file will have its own dedicated page on the website. This page will display all the information you've provided about the software product, such as its name, title, description, and front matter.
+### Understanding Software Product Pages
 
-### Software Product attributes
+When Prodcat generates your website, each software product defined in `products.js` gets its own Markdown page. This page is automatically populated using a Handlebars template (e.g., `productPage` in `prodcat.config.js`) and the data provided for that product.
 
-You can define a variety of attributes for each software product, including:
+These generated pages are designed to be rich in information, featuring the product's title, description, and any other attributes you define.
 
-- **`name`:** The name of the software product.
-- **`id`:** A unique identifier for the software product.
-- **`title`:** A short, descriptive title for the software product.
-- **`description`:** A detailed description of the software product.
-- **`frontMatter`:** An object containing `description` and `summary` properties for the front matter of the generated page.
+### Software Product Attributes and `products.js`
 
-These attributes will be displayed on the software product page in a clear and organized format.
+The `products.js` file is an array of JavaScript objects, where each object represents a single software product. Key attributes for each product include:
+
+-   `name`: A human-readable name for the product.
+-   `id`: A unique identifier, used for URL generation.
+-   `title`: The main title for the product's documentation page.
+-   `description`: A detailed overview of the product.
+-   `category`: (Optional) Used for grouping related products.
+-   `frontMatter`: An object containing Docusaurus-specific metadata for the generated Markdown page (e.g., `sidebar_label`, `description` for SEO).
+
+**Example: `products.js` with Multiple Products**
+
+Consider the following `products.js` file:
+
+```javascript
+// products.js
+module.exports = [
+  {
+    name: 'Prodcat CLI Tool',
+    id: 'prodcat-cli',
+    title: 'Prodcat Command Line Interface',
+    description: 'The main tool for generating and managing Prodcat websites.',
+    category: 'Development Tools',
+    frontMatter: {
+      description: 'The CLI tool for Prodcat.',
+      summary: 'Command line utility for Prodcat.',
+      sidebar_label: 'CLI Tool',
+    },
+  },
+  {
+    name: 'Prodcat Dashboard',
+    id: 'prodcat-dashboard',
+    title: 'Prodcat Web Dashboard',
+    description: 'A web-based interface to manage your product documentation.',
+    category: 'Web Applications',
+    frontMatter: {
+      description: 'Web dashboard for Prodcat.',
+      summary: 'User-friendly web interface.',
+      sidebar_label: 'Dashboard',
+    },
+  },
+  {
+    name: 'Prodcat Templates',
+    id: 'prodcat-templates',
+    title: 'Customizable Prodcat Templates',
+    description: 'Extend Prodcat\'s appearance with custom Handlebars templates.',
+    category: 'Development Tools',
+    frontMatter: {
+      description: 'Custom templates for Prodcat.',
+      summary: 'Handlebars templates for customization.',
+      sidebar_label: 'Templates',
+    },
+  },
+];
+```
+
+In this example:
+-   Each object represents a distinct software product.
+-   `id` is used to create unique URLs (e.g., `/docs/prodcat-cli`).
+-   `category` helps group products, which can be leveraged in templates for navigation or display.
+-   `frontMatter` properties like `sidebar_label` determine how the product appears in the Docusaurus sidebar.
 
 ## Categories
 
-### Browsing by category
+**Categories** in Prodcat serve as a logical grouping mechanism for your software products. While Prodcat itself doesn't enforce strict category-based routing, the `category` attribute in your `products.js` can be effectively used within your Handlebars templates to organize and display products.
 
-Prodcat allows you to organize your software products into categories. This makes it easy for users to browse your software products and find what they're looking for. The categories will be listed on a dedicated categories page, and users can click on a category to see all the software products within it.
+### Browsing by Category
 
-### Understanding category pages
+By defining a `category` for each product, you can create dynamic sections or filters on your landing page (generated by `landingPage.md.hbs`) or other custom pages. For example, you could list all "Development Tools" together, separate from "Web Applications."
 
-Each category has its own page that lists all the software products belonging to that category. This allows for a structured and intuitive browsing experience for the end-user.
+### Understanding Category Pages (Template-driven)
+
+Prodcat does not automatically generate dedicated "category pages" out-of-the-box. Instead, the concept of a category page is realized by how you design your `landingPage` template or other custom templates. You can iterate through your products, group them by their `category` attribute, and render them accordingly.
+
+**Example: Leveraging Categories in a Template**
+
+A Handlebars template (e.g., `landing-page.md.hbs`) might contain logic like this to group products by category:
+
+```handlebars
+{{!-- landing-page.md.hbs excerpt --}}
+{{#each categories as |categoryName productsInThisCategory|}}
+  <h2>{{categoryName}}</h2>
+  <ul>
+    {{#each productsInThisCategory as |product|}}
+      <li>
+        <a href="/docs/{{product.id}}">{{product.title}}</a>
+        <p>{{product.summary}}</p>
+      </li>
+    {{/each}}
+  </ul>
+{{/each}}
+```
+
+This template snippet demonstrates how `productsInThisCategory` (derived from the `category` attribute in `products.js`) can be used to dynamically create category-based listings on your landing page.
 
 ## Search
 
-### How to use search effectively
-
-Prodcat's search functionality, powered by Docusaurus and potentially Algolia, is a powerful tool for finding software products quickly. Simply type your search query into the search bar at the top of the page, and the results will be displayed instantly.
-
-### Search filters and operators
-
-You can use filters and operators to refine your search results. For example, you can search for software products within a specific category. Supported operators include:
-
-- **`"exact phrase"`:** Use quotes to search for an exact phrase.
-- **`category:`:** Filter by a specific category (e.g., `category:productivity`).
+(Placeholder for future content on search functionality, filters, and operators.)
