@@ -1,74 +1,33 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
-
 prodcat:
   label: Prodcat
-  permalink: /prodcat
-  description: Prodcat tag description
-
+  description: Articles related to the Prodcat tool and its features.
 comparison:
   label: Comparison
-  permalink: /comparison
-  description: Comparison tag description
-
+  description: Blog posts comparing Prodcat with other tools or concepts.
 documentation:
   label: Documentation
-  permalink: /documentation
-  description: Documentation tag description
-
+  description: Articles about creating and managing software product documentation.
 customization:
   label: Customization
-  permalink: /customization
-  description: Customization tag description
-
+  description: Guides on how to customize your Prodcat website.
 theming:
   label: Theming
-  permalink: /theming
-  description: Theming tag description
-
+  description: Articles about changing the visual theme of your Prodcat site.
 templates:
   label: Templates
-  permalink: /templates
-  description: Templates tag description
-
+  description: How-to guides for using and creating custom Handlebars templates in Prodcat.
 automation:
   label: Automation
-  permalink: /automation
-  description: Automation tag description
-
+  description: Explore how Prodcat automates documentation processes.
 time-saving:
   label: Time-saving
-  permalink: /time-saving
-  description: Time-saving tag description
-
+  description: Tips and features in Prodcat that help save time.
 business:
   label: Business
-  permalink: /business
-  description: Business tag description
-
+  description: Articles discussing the business benefits of product documentation.
 marketing:
   label: Marketing
-  permalink: /marketing
-  description: Marketing tag description
-
+  description: How product documentation can assist in marketing efforts.
 getting-started:
   label: Getting Started
-  permalink: /getting-started
-  description: Getting Started tag description
+  description: Introductory guides to using Prodcat.

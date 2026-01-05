@@ -25,6 +25,12 @@ slorber:
     newsletter: https://thisweekinreact.com
 ioncakephper:
   name: Ion Gireada
-  title: Prodcat Developer
+  title: Node.js CLI & AI Solutions Developer | Championing Pristine Software Documentation
   url: https://github.com/ioncakephper
   image_url: https://github.com/ioncakephper.png
+  page: true
+  socials:
+    # x: ioncakephper # Placeholder, assuming X handle is the same as GitHub
+    linkedin: ion-gireada-223929 # Placeholder
+    github: ioncakephper
+    # newsletter: # No newsletter for now, leave blank or remove

@@ -40,6 +40,30 @@ const config = {
     locales: ['en'],
   },
 
+  // markdown: {
+  //   parseFrontMatter: async ({filePath, fileContent, defaultParseFrontMatter}) => {
+  //     const result = await defaultParseFrontMatter({filePath, fileContent});
+  //     const frontMatter = result.frontMatter;
+
+  //     const cutoffDate = new Date('2025-01-01');
+  //     // Ensure frontMatter.date exists and is a valid date before parsing
+  //     if (frontMatter.date) {
+  //       const postDate = new Date(frontMatter.date);
+  //       if (postDate < cutoffDate) {
+  //         frontMatter.draft = true;
+  //       }
+  //     } else {
+  //       // If date is missing, assume it's an old post to be drafted
+  //       frontMatter.draft = true;
+  //     }
+
+  //     return {
+  //       ...result,
+  //       frontMatter,
+  //     };
+  //   },
+  // },
+
   presets: [
     [
       'classic',
@@ -86,28 +110,27 @@ const config = {
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Documentation',
+            title: 'Prodcat Documentation - Learn how to use Prodcat',
           },
           {
             to: '/docs/tutorials/getting-started',
             label: 'Tutorials',
             position: 'left',
+            title: 'Prodcat Tutorials - Step-by-step guides for Prodcat',
           },
-           {to: '/blog', label: 'Blog', position: 'left'},
+           {to: '/blog', label: 'Blog', position: 'left', title: 'Prodcat Blog - Latest news and articles'},
+        {
+          href: 'https://github.com/ioncakephper/prodcat',
+          position: 'right',
+          html: '<img src="https://unpkg.com/simple-icons@3.0.1/icons/github.svg" alt="GitHub" style="height: 24px; vertical-align: middle;" />',
+          title: 'Prodcat GitHub Repository - Contribute or view source code',
+        },
         {
             to: '/donate',
             label: 'DONATE',
             position: 'right',
-            className: 'button button--primary'
-        },
-        {
-            href: 'https://prodcat.threadless.com',
-            label: 'Store',
-            position: 'right',
-          },
-        {
-          href: 'https://github.com/ioncakephper/prodcat',
-          label: 'GitHub',
-          position: 'right',
+            className: 'button button--primary',
+            title: 'Support Prodcat - Make a donation',
         }],
       },
       footer: {
@@ -124,11 +147,6 @@ const config = {
                 label: 'Tutorials',
                 to: '/docs/tutorials/getting-started',
               },
-              {
-                label: 'Store',
-                href: 'https://prodcat.threadless.com',
-              }
-
             ],
           },
           {

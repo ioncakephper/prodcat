@@ -32,7 +32,7 @@ function Donate() {
               </div>
               <div className="card__body">
                 <p>Sponsor the project on GitHub and get your logo on our README.</p>
-                <a href="https://github.com/sponsors/ioncakephper/prodcat" className="button button--primary button--block">Sponsor on GitHub</a>
+                <a href="https://github.com/sponsors/ioncakephper" className="button button--primary button--block">Sponsor on GitHub</a>
               </div>
             </div>
           </div>
