@@ -87,11 +87,10 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-                    {
-            type: 'docSidebar',
-            sidebarId: 'tutorialsSidebar',
-            position: 'left',
+          {
+            to: '/docs/tutorials/getting-started',
             label: 'Tutorials',
+            position: 'left',
           },
            {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -100,6 +99,11 @@ const config = {
             position: 'right',
             className: 'button button--primary'
         },
+        {
+            href: 'https://prodcat.threadless.com',
+            label: 'Store',
+            position: 'right',
+          },
         {
           href: 'https://github.com/ioncakephper/prodcat',
           label: 'GitHub',
@@ -118,8 +122,13 @@ const config = {
               },
               {
                 label: 'Tutorials',
-                to: '/docs/tutorials/overview',
+                to: '/docs/tutorials/getting-started',
               },
+              {
+                label: 'Store',
+                href: 'https://prodcat.threadless.com',
+              }
+
             ],
           },
           {
