@@ -8,6 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const organizationName = 'ioncakephper';
+const projectName = 'prodcat';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Prodcat',
@@ -20,15 +23,17 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  // url: 'https://ioncakephper.github.io',
+  url: `https://${organizationName}.github.io`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // baseUrl: '/prodcat/',
+  baseUrl: `/${projectName}/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '', // Usually your GitHub org/user name.
-  projectName: '', // Usually your repo name.
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -40,29 +45,6 @@ const config = {
     locales: ['en'],
   },
 
-  // markdown: {
-  //   parseFrontMatter: async ({filePath, fileContent, defaultParseFrontMatter}) => {
-  //     const result = await defaultParseFrontMatter({filePath, fileContent});
-  //     const frontMatter = result.frontMatter;
-
-  //     const cutoffDate = new Date('2025-01-01');
-  //     // Ensure frontMatter.date exists and is a valid date before parsing
-  //     if (frontMatter.date) {
-  //       const postDate = new Date(frontMatter.date);
-  //       if (postDate < cutoffDate) {
-  //         frontMatter.draft = true;
-  //       }
-  //     } else {
-  //       // If date is missing, assume it's an old post to be drafted
-  //       frontMatter.draft = true;
-  //     }
-
-  //     return {
-  //       ...result,
-  //       frontMatter,
-  //     };
-  //   },
-  // },
 
   presets: [
     [
