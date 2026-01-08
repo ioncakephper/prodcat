@@ -115,6 +115,11 @@ const config = {
             title: 'Support Prodcat - Make a donation',
         }],
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       footer: {
         style: 'dark',
         links: [
