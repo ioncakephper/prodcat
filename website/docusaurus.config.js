@@ -53,6 +53,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          sidebar: {
+            collapsed: true,
+          },
         },
         blog: {
           showReadingTime: true,
