@@ -16,7 +16,7 @@ const config = {
   // title: 'Prodcat',
   title: 'Generate Directory and Product Landing Pages Automatically',
   // tagline: 'Effortless Product Documentation',
-  tagline: 'Prodcat turns a simple JavaScript product list into a directory and product landing pages automatically, connecting to product documentation on a Docusaurus documentation site — no manual Markdown required.',
+  tagline: 'Prodcat CLI turns a simple JavaScript product list into a directory and product landing pages automatically, connecting to product documentation on a Docusaurus documentation site — no manual Markdown required.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
