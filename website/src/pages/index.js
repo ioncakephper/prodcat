@@ -18,9 +18,14 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/introduction">
             Get Started
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://github.com/ioncakephper/prodcat">
+            GitHub
           </Link>
         </div>
       </div>
@@ -33,7 +38,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Prodcat: Effortless Product Documentation">
+      description="Prodcat CLI turns a simple JavaScript product list into a directory and product landing pages automatically, connecting to product documentation on a Docusaurus documentation site — no manual Markdown required.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
