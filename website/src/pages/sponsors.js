@@ -4,26 +4,26 @@ import Link from '@docusaurus/Link';
 
 const sponsors = {
   platinum: [
-    { name: 'Platinum Sponsor 1', logo: 'https://via.placeholder.com/300x150' },
-    { name: 'Platinum Sponsor 2', logo: 'https://via.placeholder.com/300x150' },
+    { name: 'Platinum Sponsor 1', logo: 'https://placehold.co/300x150' },
+    { name: 'Platinum Sponsor 2', logo: 'https://placehold.co/300x150' },
   ],
   gold: [
-    { name: 'Gold Sponsor 1', logo: 'https://via.placeholder.com/250x125' },
-    { name: 'Gold Sponsor 2', logo: 'https://via.placeholder.com/250x125' },
-    { name: 'Gold Sponsor 3', logo: 'https://via.placeholder.com/250x125' },
+    { name: 'Gold Sponsor 1', logo: 'https://placehold.co/250x125' },
+    { name: 'Gold Sponsor 2', logo: 'https://placehold.co/250x125' },
+    { name: 'Gold Sponsor 3', logo: 'https://placehold.co/250x125' },
   ],
   silver: [
-    { name: 'Silver Sponsor 1', logo: 'https://via.placeholder.com/200x100' },
-    { name: 'Silver Sponsor 2', logo: 'https://via.placeholder.com/200x100' },
-    { name: 'Silver Sponsor 3', logo: 'https://via.placeholder.com/200x100' },
-    { name: 'Silver Sponsor 4', logo: 'https://via.placeholder.com/200x100' },
+    { name: 'Silver Sponsor 1', logo: 'https://placehold.co/200x100' },
+    { name: 'Silver Sponsor 2', logo: 'https://placehold.co/200x100' },
+    { name: 'Silver Sponsor 3', logo: 'https://placehold.co/200x100' },
+    { name: 'Silver Sponsor 4', logo: 'https://placehold.co/200x100' },
   ],
   bronze: [
-    { name: 'Bronze Sponsor 1', logo: 'https://via.placeholder.com/150x75' },
-    { name: 'Bronze Sponsor 2', logo: 'https://via.placeholder.com/150x75' },
-    { name: 'Bronze Sponsor 3', logo: 'https://via.placeholder.com/150x75' },
-    { name: 'Bronze Sponsor 4', logo: 'https://via.placeholder.com/150x75' },
-    { name: 'Bronze Sponsor 5', logo: 'https://via.placeholder.com/150x75' },
+    { name: 'Bronze Sponsor 1', logo: 'https://placehold.co/150x75' },
+    { name: 'Bronze Sponsor 2', logo: 'https://placehold.co/150x75' },
+    { name: 'Bronze Sponsor 3', logo: 'https://placehold.co/150x75' },
+    { name: 'Bronze Sponsor 4', logo: 'https://placehold.co/150x75' },
+    { name: 'Bronze Sponsor 5', logo: 'https://placehold.co/150x75' },
   ],
 };
 
