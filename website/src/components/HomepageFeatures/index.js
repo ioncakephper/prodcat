@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Prodcat reads a simple JavaScript file and automatically generates product pages, categories, and navigation—no manual Markdown writing required
+        Prodcat CLI reads a simple JavaScript file and automatically generates product pages, categories, and navigation—no manual Markdown writing required
       </>
     ),
   },

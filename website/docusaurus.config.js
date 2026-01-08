@@ -83,7 +83,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Prodcat',
+        title: 'Prodcat CLI',
         logo: {
           alt: 'Prodcat Logo',
           src: 'img/logo.svg',
