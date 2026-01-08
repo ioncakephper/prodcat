@@ -15,6 +15,11 @@ This guide will walk you through the process of installing Prodcat.
 Before you can install Prodcat, you need to have the following software installed on your system:
 
 - **Node.js:** Prodcat requires a recent version of Node.js. We recommend using the latest LTS version. You can check your Node.js version by running `node -v` in your terminal.
+
+:::note
+If you don't have Node.js installed, you can download it from the [official website](https://nodejs.org/). We recommend using a version manager like `nvm` to manage multiple Node.js versions on your system.
+:::
+
 - **Docusaurus Project:** Prodcat is designed to work with a Docusaurus project. If you don't have one set up, please follow the [Docusaurus installation guide](https://docusaurus.io/docs/installation).
 
 ## Installation Methods
@@ -22,6 +27,10 @@ Before you can install Prodcat, you need to have the following software installe
 There are two ways to install Prodcat:
 
 ### Using `npx` (recommended)
+
+:::tip
+Using `npx` is the recommended approach because it ensures you are always using the latest version of Prodcat without having to manage global dependencies.
+:::
 
 The recommended way to use Prodcat is with `npx`, which allows you to run the CLI without installing it globally.
 

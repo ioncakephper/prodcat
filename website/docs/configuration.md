@@ -14,6 +14,10 @@ Prodcat is configured using two main files: `prodcat.config.js` and `products.js
 
 The `prodcat.config.js` file is the central place for configuring your Prodcat project. It allows you to customize various aspects of your documentation website.
 
+:::info
+This file is where you will spend most of your time configuring Prodcat. It is important to understand the options available in this file to get the most out of Prodcat.
+:::
+
 ### Detailed explanation of all configuration options
 
 | Option Name             | Type                  | Default Value                          | Description                                                                                                                                                                                            | Example Use Case                                             |
@@ -102,6 +106,10 @@ A software product object has the following properties:
 | `frontMatter` | `object`   | No       | `{}`      | An object containing properties that will be added to the front matter of the generated Markdown file for the product. This is crucial for Docusaurus-specific settings and SEO. Includes `description` (for SEO), `summary` (for lists), and `sidebar_label`. |
 | `category`    | `string`   | No       | -         | A string value representing the category to which the software product belongs. This property is primarily for documentation purposes within templates (e.g., for grouping products) and is not currently used by Prodcat itself for dynamic routing or filtering functionality beyond what is rendered in the markdown. There is no explicit schema validation for this property; any string value will be accepted. |
 | `docEntry`    | `string`   | No       | `'overview'` | The default entry point or sub-path within the product's documentation directory. This is used if the product has multiple documentation files (e.g., `overview.md`, `features.md`). Currently, Prodcat generates a single `index.md` per product, so this is mostly for future expansion or custom templates. |
+
+:::caution
+Once a product's `id` is set and the documentation is generated, changing the `id` will change the URL for the product. This can lead to broken links if you have linked to the product's documentation from other pages. It is recommended to choose an `id` that is unlikely to change.
+:::
 
 ### Example of a software product object
 

@@ -17,6 +17,10 @@ First, install Prodcat globally using npm:
 npm install -g prodcat
 ```
 
+:::tip
+For a more modern approach that avoids global installations, you can use `npx`. For example, instead of running `prodcat init`, you can run `npx prodcat init`. This ensures you are always using the latest version of Prodcat. See our [Installation Guide](../installation.md) for more details.
+:::
+
 ## 2. Initialize Your Project
 
 Navigate to your desired project directory and initialize Prodcat:

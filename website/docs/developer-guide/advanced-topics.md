@@ -12,6 +12,10 @@ This section covers advanced topics for developers who want to take their Prodca
 
 ## Plugin System
 
+:::danger
+The plugin system is currently experimental and is subject to change in future releases. It is not recommended to use plugins in a production environment.
+:::
+
 ### Extending Prodcat with plugins
 
 Prodcat has a plugin system that allows you to extend its functionality. Plugins can be used to add new commands, customize the build process, and integrate with other tools and services.
