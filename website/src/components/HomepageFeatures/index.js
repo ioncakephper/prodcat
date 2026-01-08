@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Prodcat automates the creation of a beautiful, feature-rich Docusaurus
-        website from a simple list of products.
+        Prodcat reads a simple JavaScript file and automatically generates product pages, categories, and navigation—no manual Markdown writing required
       </>
     ),
   },
@@ -18,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Prodcat lets you focus on your products, and we&apos;ll do the chores. Just
+        Stop maintaining product documentation by hand. Update one file, and Prodcat regenerates your entire site. Just
         add your products to the <code>products.js</code> file.
       </>
     ),
