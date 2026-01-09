@@ -1,6 +1,9 @@
 automation:
   label: Automation
   description: Explore how Prodcat automates documentation processes.
+best-practices:
+  label: Best Practices
+  description: Recommended strategies and methods for optimal results.
 business:
   label: Business
   description: Articles discussing the business benefits of product documentation.
@@ -28,6 +31,9 @@ marketing:
 prodcat:
   label: Prodcat
   description: Articles related to the Prodcat tool and its features.
+schema:
+  label: Schema
+  description: Best practices for structuring your product data.
 templates:
   label: Templates
   description: How-to guides for using and creating custom Handlebars templates in Prodcat.
@@ -37,3 +43,6 @@ theming:
 time-saving:
   label: Time-saving
   description: Tips and features in Prodcat that help save time.
+tutorial:
+  label: Tutorial
+  description: Step-by-step guides to help you get the most out of Prodcat.

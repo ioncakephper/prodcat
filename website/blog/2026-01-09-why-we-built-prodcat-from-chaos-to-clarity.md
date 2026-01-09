@@ -21,3 +21,4 @@ Prodcat isn’t just a generator. It’s a philosophy:
 - Focus on what matters — your products
 
 Whether you’re documenting hardware, software, or services, Prodcat helps you scale without losing clarity.
+
