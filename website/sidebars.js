@@ -24,7 +24,7 @@ const sidebars = {
     'available-commands',
     'configuration',
     'faq',
-    'support',
+    // 'support',
     {
       type: 'category',
       label: 'Developer Guide',

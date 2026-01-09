@@ -23,3 +23,8 @@
   justify-content: center;
   gap: 1rem;
 }
+
+.heroBanner {
+  background: var(--prodcat-hero-bg);
+  color: var(--prodcat-hero-text);
+}
