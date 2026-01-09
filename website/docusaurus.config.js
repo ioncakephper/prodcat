@@ -83,6 +83,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        // style: 'dark',
         title: 'Prodcat CLI',
         logo: {
           alt: 'Prodcat Logo',
@@ -167,6 +168,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/ioncakephper/prodcat',
               },
+              {
+                label: 'Support',
+                to: '/docs/support',
+              }
             ],
           },
         ],

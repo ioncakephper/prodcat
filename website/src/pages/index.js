@@ -7,24 +7,87 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+import React from 'react';
+
+
+// function HomepageHeader() {
+//   const {siteConfig} = useDocusaurusContext();
+//   return (
+//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+//       <div className="container">
+//         <Heading as="h1" className="hero__title">
+//           {siteConfig.title}
+//         </Heading>
+//         <p className="hero__subtitle">{siteConfig.tagline}</p>
+//         <div className={styles.buttons}>
+//           <Link
+//             className="button button--primary button--lg"
+//             to="/docs/introduction">
+//             Get Started
+//           </Link>
+//           <Link
+//             className="button button--secondary button--lg"
+//             to="https://github.com/ioncakephper/prodcat">
+//             GitHub
+//           </Link>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
+
+
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header
+      className={clsx('hero hero--primary', styles.heroBanner)}
+      style={{
+        background: 'var(--prodcat-hero-bg)',
+        color: 'var(--prodcat-hero-text)',
+        padding: '6rem 0',
+        textAlign: 'center'
+      }}
+    >
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <h1 className="hero__title" style={{ color: 'var(--prodcat-hero-text)' }}>
+          Generate Product Documentation Automatically
+        </h1>
+
+        <p
+          className="hero__subtitle"
+          style={{
+            maxWidth: '700px',
+            margin: '1.5rem auto',
+            opacity: 0.9,
+            color: 'var(--prodcat-hero-text)'
+          }}
+        >
+          Prodcat turns a simple JavaScript product list into a fully generated
+          Docusaurus documentation site — no manual Markdown required.
+        </p>
+
+        <div style={{ marginTop: '2rem' }}>
           <Link
-            className="button button--primary button--lg"
-            to="/docs/introduction">
+            className="button button--lg"
+            style={{
+              backgroundColor: 'var(--ifm-color-primary)',
+              color: '#fff',
+              marginRight: '1rem'
+            }}
+            to="/docs/introduction"
+          >
             Get Started
           </Link>
+
           <Link
-            className="button button--secondary button--lg"
-            to="https://github.com/ioncakephper/prodcat">
+            className="button button--lg"
+            style={{
+              backgroundColor: '#fff',
+              color: 'var(--ifm-color-primary)',
+              border: '2px solid var(--ifm-color-primary)'
+            }}
+            to="https://github.com/ioncakephper/prodcat"
+          >
             GitHub
           </Link>
         </div>
@@ -32,6 +95,7 @@ function HomepageHeader() {
     </header>
   );
 }
+
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -46,3 +110,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+
