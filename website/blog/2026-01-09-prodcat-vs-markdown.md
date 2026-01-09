@@ -27,5 +27,4 @@ But it’s not just about speed:
 - SEO metadata is built-in  
 - New contributors can onboard faster  
 
-If you’re still writing Markdown by hand, it’s time to upgrade.  
-Prodcat isn’t just faster — it’s smarter.
+If you’re still writing Markdown by hand, it’s time to upgrade. Prodcat isn’t just faster — it’s smarter.
