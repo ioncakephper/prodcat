@@ -28,6 +28,9 @@ getting-started:
 marketing:
   label: Marketing
   description: How product documentation can assist in marketing efforts.
+productivity:
+  label: Productivity
+  description: Tips and tools to enhance your documentation workflow.
 prodcat:
   label: Prodcat
   description: Articles related to the Prodcat tool and its features.
