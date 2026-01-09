@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ioncakephper.github.io/prodcat/blog</id>
     <title>Generate Directory and Product Landing Pages Automatically Blog</title>
-    <updated>2025-12-31T00:00:00.000Z</updated>
+    <updated>2026-01-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ioncakephper.github.io/prodcat/blog"/>
     <subtitle>Generate Directory and Product Landing Pages Automatically Blog</subtitle>
     <icon>https://ioncakephper.github.io/prodcat/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Why We Built Prodcat: From Chaos to Clarity]]></title>
+        <id>https://ioncakephper.github.io/prodcat/blog/2026/01/09/why-we-built-prodcat-from-chaos-to-clarity</id>
+        <link href="https://ioncakephper.github.io/prodcat/blog/2026/01/09/why-we-built-prodcat-from-chaos-to-clarity"/>
+        <updated>2026-01-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Maintaining product documentation was eating our time and sanity. We built Prodcat to fix that — and here’s how it changed everything]]></summary>
+        <content type="html"><![CDATA[<p>Maintaining product documentation was eating our time and sanity. We built Prodcat to fix that — and here’s how it changed everything</p>
+<p>Before Prodcat, we were juggling dozens of Markdown files, manually updating product specs, and constantly breaking navigation. Every new product meant copy-pasting templates, fixing links, and hoping we didn’t miss a field. It was error-prone, slow, and deeply frustrating.</p>
+<p>We asked ourselves: <em>What if documentation could be generated from a single source of truth?</em></p>
+<p>That’s how Prodcat was born — a tool that reads a JavaScript product list and generates a full Docusaurus site. No more Markdown. No more broken links. Just clean, consistent documentation.</p>
+<p>Prodcat isn’t just a generator. It’s a philosophy:</p>
+<ul>
+<li class="">Centralize your data</li>
+<li class="">Automate the boring parts</li>
+<li class="">Focus on what matters — your products</li>
+</ul>
+<p>Whether you’re documenting hardware, software, or services, Prodcat helps you scale without losing clarity.</p>]]></content>
+        <author>
+            <name>Ion Gireada</name>
+            <uri>https://github.com/ioncakephper</uri>
+        </author>
+        <category label="Prodcat" term="Prodcat"/>
+        <category label="Chaos" term="Chaos"/>
+        <category label="Clarity" term="Clarity"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Getting Started with Prodcat: A Beginner's Guide]]></title>
         <id>https://ioncakephper.github.io/prodcat/blog/2025/12/31/getting-started-with-prodcat</id>
