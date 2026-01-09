@@ -31,3 +31,9 @@ marketing:
 getting-started:
   label: Getting Started
   description: Introductory guides to using Prodcat.
+chaos:
+  label: Chaos
+  description: Articles discussing chaos engineering principles and practices.
+clarity:
+  label: Clarity
+  description: Articles focusing on achieving clarity in documentation and communication.
