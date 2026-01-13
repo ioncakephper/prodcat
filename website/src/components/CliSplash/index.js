@@ -6,7 +6,6 @@ const CliSplash = () => (
     <div className="container">
       <h2 className={styles.cliHeader}>Generate Product Pages in Seconds</h2>
       <p className={styles.cliSubheader}>
-
         Use prodcat CLI to generate products directory and landing pages from a simple JS products file.
       </p>
       <div className={styles.cliCommand}>
@@ -17,7 +16,6 @@ const CliSplash = () => (
       <h2 className={styles.cliHeader}>Get Started in Seconds</h2>
       <p className={styles.cliSubheader}>
         Use prodcat CLI to initialize a new project and see the magic happen.
-
       </p>
       <div className={styles.cliCommand}>
         <pre>
