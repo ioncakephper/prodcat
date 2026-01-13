@@ -8,17 +8,16 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Prodcat CLI reads a simple JavaScript file and automatically generates product pages, categories, and navigation—no manual Markdown writing required
+        The <strong>Prodcat CLI</strong> automates the creation of comprehensive product documentation websites. Simply define your products in a JavaScript file, and the CLI generates all necessary pages, categories, and navigation. No more tedious manual Markdown writing!
       </>
     ),
   },
   {
-    title: 'Focus on Your Products',
+    title: 'Streamline Your Workflow with the CLI',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Stop maintaining product documentation by hand. Update one file, and Prodcat regenerates your entire site. Just
-        add your products to the <code>products.js</code> file.
+        Let the <strong>Prodcat CLI</strong> handle the repetitive tasks so you can concentrate on what truly matters: your products. Update a single source file, and the CLI regenerates your entire site, ensuring consistency and saving you countless hours.
       </>
     ),
   },

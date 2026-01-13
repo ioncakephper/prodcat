@@ -1,0 +1,35 @@
+.cliSplash {
+  background-color: #f5f5f7;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cliHeader {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem; /* Added margin-top for spacing from preceding content */
+  color: #1d1d1f;
+}
+
+.cliSubheader {
+  font-size: 1.25rem;
+  color: #6e6e73;
+  margin-bottom: 2rem;
+}
+
+.cliCommand {
+  background-color: #2b2b2b;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: inline-block;
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono',
+    'Courier New', monospace;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+}
+
+.cliCommand code {
+  color: #121208; /* Ensures code text is visible */
+}

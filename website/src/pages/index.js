@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import CliSplash from '@site/src/components/CliSplash';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -105,6 +106,7 @@ export default function Home() {
       description="Prodcat CLI turns a simple JavaScript product list into a directory and product landing pages automatically, connecting to product documentation on a Docusaurus documentation site — no manual Markdown required.">
       <HomepageHeader />
       <main>
+        <CliSplash />
         <HomepageFeatures />
       </main>
     </Layout>
