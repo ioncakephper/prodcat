@@ -66,3 +66,6 @@ This will generate a static HTML website in the `website/build` directory.
 That's it! You can now view your website by opening the `website/build/index.html` file in your browser. Or, you can run `npm start` in the `website` directory to start a local development server.
 
 We hope this guide has been helpful. If you have any questions, feel free to reach out to us on [GitHub](https://github.com/your-repo/prodcat).
+
+
+
