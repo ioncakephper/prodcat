@@ -127,8 +127,8 @@
             <uri>https://github.com/ioncakephper</uri>
         </author>
         <category label="Prodcat" term="Prodcat"/>
-        <category label="Chaos" term="Chaos"/>
-        <category label="Clarity" term="Clarity"/>
+        <category label="Origin Story" term="Origin Story"/>
+        <category label="Documentation" term="Documentation"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Getting Started with Prodcat: A Beginner's Guide]]></title>
