@@ -7,12 +7,6 @@ best-practices:
 business:
   label: Business
   description: Articles discussing the business benefits of product documentation.
-chaos:
-  label: Chaos
-  description: Articles discussing chaos engineering principles and practices.
-clarity:
-  label: Clarity
-  description: Articles focusing on achieving clarity in documentation and communication.
 comparison:
   label: Comparison
   description: Blog posts comparing Prodcat with other tools or concepts.
@@ -28,6 +22,9 @@ getting-started:
 marketing:
   label: Marketing
   description: How product documentation can assist in marketing efforts.
+origin-story:
+  label: Origin Story
+  description: The story behind why Prodcat was created.
 productivity:
   label: Productivity
   description: Tips and tools to enhance your documentation workflow.

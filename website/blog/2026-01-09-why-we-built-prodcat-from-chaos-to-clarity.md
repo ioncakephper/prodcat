@@ -1,7 +1,7 @@
 ---
 title: "Why We Built Prodcat: From Chaos to Clarity"
 authors: ioncakephper
-tags: [prodcat, chaos, clarity]
+tags: [prodcat, origin-story, documentation]
 ---
 
 Maintaining product documentation was eating our time and sanity. We built Prodcat to fix that — and here’s how it changed everything. It’s the story of moving from a state of constant, low-grade chaos to one of structure and clarity.
